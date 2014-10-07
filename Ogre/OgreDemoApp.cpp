@@ -167,24 +167,60 @@ void DemoApp::setupDemoScene()
 //	m_pOgreHeadNode = OgreFramework::getSingletonPtr()->m_pSceneMgr->getRootSceneNode()->createChildSceneNode("OgreHeadNode");
 //	m_pOgreHeadNode->attachObject(m_pOgreHeadEntity);
     
+//    {
+//        Ogre::SceneManager *m_pSceneMgr = OgreFramework::getSingletonPtr()->m_pSceneMgr;
+//        m_pSceneMgr->setAmbientLight(Ogre::ColourValue(1.0, 1.0, 1.0));
+//        
+//        Ogre::Entity *headEntity1 = m_pSceneMgr->createEntity("Head1", "ogrehead.mesh");
+//        Ogre::SceneNode *node1 = m_pSceneMgr->getRootSceneNode()->createChildSceneNode("Node1");
+//        node1->attachObject(headEntity1);
+//        node1->pitch(Ogre::Degree(-90));
+//        
+//        Ogre::Entity *headEntity2 = m_pSceneMgr->createEntity("Head2", "ogrehead.mesh");
+//        Ogre::SceneNode *node2 = m_pSceneMgr->getRootSceneNode()->createChildSceneNode("Node2", Ogre::Vector3(-100, 0, 0));
+//        node2->attachObject(headEntity2);
+//        node2->yaw(Ogre::Degree(-90));
+//        
+//        Ogre::Entity *headEntity3 = m_pSceneMgr->createEntity("Head3", "ogrehead.mesh");
+//        Ogre::SceneNode *node3 = m_pSceneMgr->getRootSceneNode()->createChildSceneNode("Node3", Ogre::Vector3(100, 0, 0));
+//        node3->attachObject(headEntity3);
+//        node3->roll(Ogre::Degree(-90));
+//    }
+    
     {
         Ogre::SceneManager *m_pSceneMgr = OgreFramework::getSingletonPtr()->m_pSceneMgr;
-        m_pSceneMgr->setAmbientLight(Ogre::ColourValue(1.0, 1.0, 1.0));
+        Ogre::Entity *ninjaEntity = m_pSceneMgr->createEntity("Ninja", "ninja.mesh");
+        m_pSceneMgr->getRootSceneNode()->createChildSceneNode("ninjaSceneNode")->attachObject(ninjaEntity);
+        m_pSceneMgr->getSceneNode("ninjaSceneNode")->yaw(Ogre::Degree(-90));
+        m_pSceneMgr->getSceneNode("ninjaSceneNode")->setScale(Ogre::Vector3(.5, .5, .5f));
+        ninjaEntity->setCastShadows(true);
         
-        Ogre::Entity *headEntity1 = m_pSceneMgr->createEntity("Head1", "ogrehead.mesh");
-        Ogre::SceneNode *node1 = m_pSceneMgr->getRootSceneNode()->createChildSceneNode("Node1");
-        node1->attachObject(headEntity1);
-        node1->pitch(Ogre::Degree(-90));
+        Ogre::Plane plane(Ogre::Vector3::UNIT_Y, 0);
+        Ogre::MeshManager::getSingleton().createPlane("ground", Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, plane, 1500, 1500, 20, 20, true, 1, 5, 5, Ogre::Vector3::UNIT_Z);
+        Ogre::Entity *entGround = m_pSceneMgr->createEntity("GroundEntity", "ground");
+        m_pSceneMgr->getRootSceneNode()->createChildSceneNode()->attachObject(entGround);
+        entGround->setMaterialName("Examples/Rockwall");
+        entGround->setCastShadows(false);
         
-        Ogre::Entity *headEntity2 = m_pSceneMgr->createEntity("Head2", "ogrehead.mesh");
-        Ogre::SceneNode *node2 = m_pSceneMgr->getRootSceneNode()->createChildSceneNode("Node2", Ogre::Vector3(100, 0, 0));
-        node2->attachObject(headEntity2);
-        node2->yaw(Ogre::Degree(-90));
+        Ogre::Light *pointLight = m_pSceneMgr->createLight("pointLight");
+        pointLight->setType(Ogre::Light::LT_POINT);
+        pointLight->setPosition(Ogre::Vector3(0, 150, 250));
+        pointLight->setDiffuseColour(1.0, 1.0, 1.0);
+        pointLight->setSpecularColour(1.0, 1.0, 1.0);
         
-        Ogre::Entity *headEntity3 = m_pSceneMgr->createEntity("Head3", "ogrehead.mesh");
-        Ogre::SceneNode *node3 = m_pSceneMgr->getRootSceneNode()->createChildSceneNode("Node3", Ogre::Vector3(200, 0, 0));
-        node3->attachObject(headEntity3);
-        node3->roll(Ogre::Degree(-90));
+        Ogre::Light *directionalLight = m_pSceneMgr->createLight("directionalLight");
+        directionalLight->setType(Ogre::Light::LT_DIRECTIONAL);
+        directionalLight->setDiffuseColour(Ogre::ColourValue(.25, .25, 0));
+        directionalLight->setSpecularColour(Ogre::ColourValue(.25, .25, 0));
+        directionalLight->setDirection(Ogre::Vector3(0, -1, 1));
+        
+        Ogre::Light *spotLight = m_pSceneMgr->createLight("spotLight");
+        spotLight->setType(Ogre::Light::LT_SPOTLIGHT);
+        spotLight->setDiffuseColour(Ogre::ColourValue(0, 0, 1.0));
+        spotLight->setSpecularColour(Ogre::ColourValue(0, 0, 1.0));
+        spotLight->setDirection(Ogre::Vector3(-1, -1, 0));
+        spotLight->setPosition(Ogre::Vector3(300, 300, 0));
+        spotLight->setSpotlightRange(Ogre::Degree(35), Ogre::Degree(50));
     }
 }
 
