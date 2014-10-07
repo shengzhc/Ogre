@@ -1,4 +1,6 @@
 .DS_Store
+xcuserdata
+*.xccheckout
 
 # Compiled Object files
 *.slo
