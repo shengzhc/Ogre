@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C3459D819E3B0C400C90FBD /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3459D719E3B0C400C90FBD /* Carbon.framework */; };
+		9C3459DA19E3B0C400C90FBD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3459D919E3B0C400C90FBD /* Cocoa.framework */; };
+		9C3459DC19E3B0C400C90FBD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3459DB19E3B0C400C90FBD /* IOKit.framework */; };
+		9C3459DE19E3B0C400C90FBD /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3459DD19E3B0C400C90FBD /* OpenGL.framework */; };
+		9C3459E019E3B0C400C90FBD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3459DF19E3B0C400C90FBD /* QuartzCore.framework */; };
+		9C3459E719E3B0C400C90FBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C3459E519E3B0C400C90FBD /* InfoPlist.strings */; };
+		9C3459E919E3B0C400C90FBD /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9C3459E819E3B0C400C90FBD /* main.mm */; };
+		9C3459ED19E3B0C400C90FBD /* OgreDemoApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C3459EC19E3B0C400C90FBD /* OgreDemoApp.cpp */; };
+		9C3459F019E3B0C400C90FBD /* OgreFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C3459EF19E3B0C400C90FBD /* OgreFramework.cpp */; };
+		9C345A0419E3B0C400C90FBD /* ogre.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 9C345A0319E3B0C400C90FBD /* ogre.cfg */; };
+		9C345A0619E3B0C400C90FBD /* plugins.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 9C345A0519E3B0C400C90FBD /* plugins.cfg */; };
+		9C345A0819E3B0C400C90FBD /* resources.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 9C345A0719E3B0C400C90FBD /* resources.cfg */; };
+		9CB2AD4E19E3B25D000A6533 /* Ogre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD4019E3B25D000A6533 /* Ogre.framework */; };
+		9CB2AD4F19E3B25D000A6533 /* OgreOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD4119E3B25D000A6533 /* OgreOverlay.framework */; };
+		9CB2AD5019E3B25D000A6533 /* OgrePaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD4219E3B25D000A6533 /* OgrePaging.framework */; };
+		9CB2AD5119E3B25D000A6533 /* OgreProperty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD4319E3B25D000A6533 /* OgreProperty.framework */; };
+		9CB2AD5219E3B25D000A6533 /* OgreRTShaderSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD4419E3B25D000A6533 /* OgreRTShaderSystem.framework */; };
+		9CB2AD5319E3B25D000A6533 /* OgreTerrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD4519E3B25D000A6533 /* OgreTerrain.framework */; };
+		9CB2AD5419E3B25D000A6533 /* OgreVolume.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD4619E3B25D000A6533 /* OgreVolume.framework */; };
+		9CB2AD5519E3B25D000A6533 /* Plugin_BSPSceneManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD4719E3B25D000A6533 /* Plugin_BSPSceneManager.framework */; };
+		9CB2AD5619E3B25D000A6533 /* Plugin_CgProgramManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD4819E3B25D000A6533 /* Plugin_CgProgramManager.framework */; };
+		9CB2AD5719E3B25D000A6533 /* Plugin_OctreeSceneManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD4919E3B25D000A6533 /* Plugin_OctreeSceneManager.framework */; };
+		9CB2AD5819E3B25D000A6533 /* Plugin_OctreeZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD4A19E3B25D000A6533 /* Plugin_OctreeZone.framework */; };
+		9CB2AD5919E3B25D000A6533 /* Plugin_ParticleFX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD4B19E3B25D000A6533 /* Plugin_ParticleFX.framework */; };
+		9CB2AD5A19E3B25D000A6533 /* Plugin_PCZSceneManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD4C19E3B25D000A6533 /* Plugin_PCZSceneManager.framework */; };
+		9CB2AD5B19E3B25D000A6533 /* RenderSystem_GL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD4D19E3B25D000A6533 /* RenderSystem_GL.framework */; };
+		9CB2AD5C19E3B26D000A6533 /* Ogre.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD4019E3B25D000A6533 /* Ogre.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD5D19E3B26D000A6533 /* OgreOverlay.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD4119E3B25D000A6533 /* OgreOverlay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD5E19E3B26D000A6533 /* OgrePaging.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD4219E3B25D000A6533 /* OgrePaging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD5F19E3B26D000A6533 /* OgreProperty.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD4319E3B25D000A6533 /* OgreProperty.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD6019E3B26D000A6533 /* OgreRTShaderSystem.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD4419E3B25D000A6533 /* OgreRTShaderSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD6119E3B26D000A6533 /* OgreTerrain.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD4519E3B25D000A6533 /* OgreTerrain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD6219E3B26D000A6533 /* OgreVolume.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD4619E3B25D000A6533 /* OgreVolume.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD6319E3B26D000A6533 /* Plugin_BSPSceneManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD4719E3B25D000A6533 /* Plugin_BSPSceneManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD6419E3B26D000A6533 /* Plugin_CgProgramManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD4819E3B25D000A6533 /* Plugin_CgProgramManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD6519E3B26D000A6533 /* Plugin_OctreeSceneManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD4919E3B25D000A6533 /* Plugin_OctreeSceneManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD6619E3B26D000A6533 /* Plugin_OctreeZone.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD4A19E3B25D000A6533 /* Plugin_OctreeZone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD6719E3B26D000A6533 /* Plugin_ParticleFX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD4B19E3B25D000A6533 /* Plugin_ParticleFX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD6819E3B26D000A6533 /* Plugin_PCZSceneManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD4C19E3B25D000A6533 /* Plugin_PCZSceneManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD6919E3B26D000A6533 /* RenderSystem_GL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD4D19E3B25D000A6533 /* RenderSystem_GL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9C345A0E19E3B10400C90FBD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9CB2AD5C19E3B26D000A6533 /* Ogre.framework in CopyFiles */,
+				9CB2AD5D19E3B26D000A6533 /* OgreOverlay.framework in CopyFiles */,
+				9CB2AD5E19E3B26D000A6533 /* OgrePaging.framework in CopyFiles */,
+				9CB2AD5F19E3B26D000A6533 /* OgreProperty.framework in CopyFiles */,
+				9CB2AD6019E3B26D000A6533 /* OgreRTShaderSystem.framework in CopyFiles */,
+				9CB2AD6119E3B26D000A6533 /* OgreTerrain.framework in CopyFiles */,
+				9CB2AD6219E3B26D000A6533 /* OgreVolume.framework in CopyFiles */,
+				9CB2AD6319E3B26D000A6533 /* Plugin_BSPSceneManager.framework in CopyFiles */,
+				9CB2AD6419E3B26D000A6533 /* Plugin_CgProgramManager.framework in CopyFiles */,
+				9CB2AD6519E3B26D000A6533 /* Plugin_OctreeSceneManager.framework in CopyFiles */,
+				9CB2AD6619E3B26D000A6533 /* Plugin_OctreeZone.framework in CopyFiles */,
+				9CB2AD6719E3B26D000A6533 /* Plugin_ParticleFX.framework in CopyFiles */,
+				9CB2AD6819E3B26D000A6533 /* Plugin_PCZSceneManager.framework in CopyFiles */,
+				9CB2AD6919E3B26D000A6533 /* RenderSystem_GL.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9C3459D419E3B0C400C90FBD /* Ogre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ogre.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C3459D719E3B0C400C90FBD /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		9C3459D919E3B0C400C90FBD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9C3459DB19E3B0C400C90FBD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		9C3459DD19E3B0C400C90FBD /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		9C3459DF19E3B0C400C90FBD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9C3459E319E3B0C400C90FBD /* Ogre-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ogre-Prefix.pch"; sourceTree = "<group>"; };
+		9C3459E419E3B0C400C90FBD /* Ogre-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ogre-Info.plist"; sourceTree = "<group>"; };
+		9C3459E619E3B0C400C90FBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C3459E819E3B0C400C90FBD /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		9C3459EB19E3B0C400C90FBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C3459EC19E3B0C400C90FBD /* OgreDemoApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OgreDemoApp.cpp; sourceTree = "<group>"; };
+		9C3459EE19E3B0C400C90FBD /* OgreDemoApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OgreDemoApp.h; sourceTree = "<group>"; };
+		9C3459EF19E3B0C400C90FBD /* OgreFramework.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OgreFramework.cpp; sourceTree = "<group>"; };
+		9C3459F119E3B0C400C90FBD /* OgreFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OgreFramework.h; sourceTree = "<group>"; };
+		9C3459F619E3B0C400C90FBD /* Examples.material */ = {isa = PBXFileReference; lastKnownFileType = text; path = Examples.material; sourceTree = "<group>"; };
+		9C3459F719E3B0C400C90FBD /* Ogre.material */ = {isa = PBXFileReference; lastKnownFileType = text; path = Ogre.material; sourceTree = "<group>"; };
+		9C3459F919E3B0C400C90FBD /* GreenSkin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GreenSkin.jpg; sourceTree = "<group>"; };
+		9C3459FA19E3B0C400C90FBD /* spheremap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spheremap.png; sourceTree = "<group>"; };
+		9C3459FB19E3B0C400C90FBD /* tusk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tusk.jpg; sourceTree = "<group>"; };
+		9C3459FD19E3B0C400C90FBD /* ogrehead.mesh */ = {isa = PBXFileReference; lastKnownFileType = file; path = ogrehead.mesh; sourceTree = "<group>"; };
+		9C3459FF19E3B0C400C90FBD /* cubemap.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = cubemap.zip; sourceTree = "<group>"; };
+		9C345A0019E3B0C400C90FBD /* cubemapsJS.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = cubemapsJS.zip; sourceTree = "<group>"; };
+		9C345A0119E3B0C400C90FBD /* SdkTrays.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = SdkTrays.zip; sourceTree = "<group>"; };
+		9C345A0219E3B0C400C90FBD /* skybox.zip */ = {isa = PBXFileReference; lastKnownFileType = folder; name = skybox.zip; path = ..; sourceTree = "<group>"; };
+		9C345A0319E3B0C400C90FBD /* ogre.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = ogre.cfg; sourceTree = "<group>"; };
+		9C345A0519E3B0C400C90FBD /* plugins.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = plugins.cfg; sourceTree = "<group>"; };
+		9C345A0719E3B0C400C90FBD /* resources.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = resources.cfg; sourceTree = "<group>"; };
+		9CB2AD4019E3B25D000A6533 /* Ogre.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ogre.framework; sourceTree = "<group>"; };
+		9CB2AD4119E3B25D000A6533 /* OgreOverlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OgreOverlay.framework; sourceTree = "<group>"; };
+		9CB2AD4219E3B25D000A6533 /* OgrePaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OgrePaging.framework; sourceTree = "<group>"; };
+		9CB2AD4319E3B25D000A6533 /* OgreProperty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OgreProperty.framework; sourceTree = "<group>"; };
+		9CB2AD4419E3B25D000A6533 /* OgreRTShaderSystem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OgreRTShaderSystem.framework; sourceTree = "<group>"; };
+		9CB2AD4519E3B25D000A6533 /* OgreTerrain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OgreTerrain.framework; sourceTree = "<group>"; };
+		9CB2AD4619E3B25D000A6533 /* OgreVolume.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OgreVolume.framework; sourceTree = "<group>"; };
+		9CB2AD4719E3B25D000A6533 /* Plugin_BSPSceneManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Plugin_BSPSceneManager.framework; sourceTree = "<group>"; };
+		9CB2AD4819E3B25D000A6533 /* Plugin_CgProgramManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Plugin_CgProgramManager.framework; sourceTree = "<group>"; };
+		9CB2AD4919E3B25D000A6533 /* Plugin_OctreeSceneManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Plugin_OctreeSceneManager.framework; sourceTree = "<group>"; };
+		9CB2AD4A19E3B25D000A6533 /* Plugin_OctreeZone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Plugin_OctreeZone.framework; sourceTree = "<group>"; };
+		9CB2AD4B19E3B25D000A6533 /* Plugin_ParticleFX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Plugin_ParticleFX.framework; sourceTree = "<group>"; };
+		9CB2AD4C19E3B25D000A6533 /* Plugin_PCZSceneManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Plugin_PCZSceneManager.framework; sourceTree = "<group>"; };
+		9CB2AD4D19E3B25D000A6533 /* RenderSystem_GL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RenderSystem_GL.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C3459D019E3B0C400C90FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CB2AD5319E3B25D000A6533 /* OgreTerrain.framework in Frameworks */,
+				9CB2AD5519E3B25D000A6533 /* Plugin_BSPSceneManager.framework in Frameworks */,
+				9CB2AD5A19E3B25D000A6533 /* Plugin_PCZSceneManager.framework in Frameworks */,
+				9CB2AD5719E3B25D000A6533 /* Plugin_OctreeSceneManager.framework in Frameworks */,
+				9CB2AD5819E3B25D000A6533 /* Plugin_OctreeZone.framework in Frameworks */,
+				9CB2AD5619E3B25D000A6533 /* Plugin_CgProgramManager.framework in Frameworks */,
+				9CB2AD5419E3B25D000A6533 /* OgreVolume.framework in Frameworks */,
+				9C3459E019E3B0C400C90FBD /* QuartzCore.framework in Frameworks */,
+				9CB2AD5919E3B25D000A6533 /* Plugin_ParticleFX.framework in Frameworks */,
+				9CB2AD4E19E3B25D000A6533 /* Ogre.framework in Frameworks */,
+				9CB2AD5B19E3B25D000A6533 /* RenderSystem_GL.framework in Frameworks */,
+				9CB2AD4F19E3B25D000A6533 /* OgreOverlay.framework in Frameworks */,
+				9CB2AD5019E3B25D000A6533 /* OgrePaging.framework in Frameworks */,
+				9C3459DA19E3B0C400C90FBD /* Cocoa.framework in Frameworks */,
+				9C3459DE19E3B0C400C90FBD /* OpenGL.framework in Frameworks */,
+				9C3459D819E3B0C400C90FBD /* Carbon.framework in Frameworks */,
+				9CB2AD5219E3B25D000A6533 /* OgreRTShaderSystem.framework in Frameworks */,
+				9CB2AD5119E3B25D000A6533 /* OgreProperty.framework in Frameworks */,
+				9C3459DC19E3B0C400C90FBD /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C3459CA19E3B0C400C90FBD = {
+			isa = PBXGroup;
+			children = (
+				9C3459E119E3B0C400C90FBD /* Ogre */,
+				9C3459D619E3B0C400C90FBD /* Frameworks */,
+				9C3459D519E3B0C400C90FBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C3459D519E3B0C400C90FBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C3459D419E3B0C400C90FBD /* Ogre.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C3459D619E3B0C400C90FBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CB2AD4019E3B25D000A6533 /* Ogre.framework */,
+				9CB2AD4119E3B25D000A6533 /* OgreOverlay.framework */,
+				9CB2AD4219E3B25D000A6533 /* OgrePaging.framework */,
+				9CB2AD4319E3B25D000A6533 /* OgreProperty.framework */,
+				9CB2AD4419E3B25D000A6533 /* OgreRTShaderSystem.framework */,
+				9CB2AD4519E3B25D000A6533 /* OgreTerrain.framework */,
+				9CB2AD4619E3B25D000A6533 /* OgreVolume.framework */,
+				9CB2AD4719E3B25D000A6533 /* Plugin_BSPSceneManager.framework */,
+				9CB2AD4819E3B25D000A6533 /* Plugin_CgProgramManager.framework */,
+				9CB2AD4919E3B25D000A6533 /* Plugin_OctreeSceneManager.framework */,
+				9CB2AD4A19E3B25D000A6533 /* Plugin_OctreeZone.framework */,
+				9CB2AD4B19E3B25D000A6533 /* Plugin_ParticleFX.framework */,
+				9CB2AD4C19E3B25D000A6533 /* Plugin_PCZSceneManager.framework */,
+				9CB2AD4D19E3B25D000A6533 /* RenderSystem_GL.framework */,
+				9C3459D719E3B0C400C90FBD /* Carbon.framework */,
+				9C3459D919E3B0C400C90FBD /* Cocoa.framework */,
+				9C3459DB19E3B0C400C90FBD /* IOKit.framework */,
+				9C3459DD19E3B0C400C90FBD /* OpenGL.framework */,
+				9C3459DF19E3B0C400C90FBD /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C3459E119E3B0C400C90FBD /* Ogre */ = {
+			isa = PBXGroup;
+			children = (
+				9C3459E519E3B0C400C90FBD /* InfoPlist.strings */,
+				9C3459E819E3B0C400C90FBD /* main.mm */,
+				9C3459EA19E3B0C400C90FBD /* Basic Ogre Framework */,
+				9C3459F219E3B0C400C90FBD /* Resources */,
+				9C3459E219E3B0C400C90FBD /* Supporting Files */,
+			);
+			path = Ogre;
+			sourceTree = "<group>";
+		};
+		9C3459E219E3B0C400C90FBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C3459E319E3B0C400C90FBD /* Ogre-Prefix.pch */,
+				9C3459E419E3B0C400C90FBD /* Ogre-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C3459EA19E3B0C400C90FBD /* Basic Ogre Framework */ = {
+			isa = PBXGroup;
+			children = (
+				9C3459EB19E3B0C400C90FBD /* AppDelegate.h */,
+				9C3459EC19E3B0C400C90FBD /* OgreDemoApp.cpp */,
+				9C3459EE19E3B0C400C90FBD /* OgreDemoApp.h */,
+				9C3459EF19E3B0C400C90FBD /* OgreFramework.cpp */,
+				9C3459F119E3B0C400C90FBD /* OgreFramework.h */,
+			);
+			name = "Basic Ogre Framework";
+			sourceTree = "<group>";
+		};
+		9C3459F219E3B0C400C90FBD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C345A0319E3B0C400C90FBD /* ogre.cfg */,
+				9C345A0519E3B0C400C90FBD /* plugins.cfg */,
+				9C345A0719E3B0C400C90FBD /* resources.cfg */,
+				9C3459F319E3B0C400C90FBD /* media */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9C3459F319E3B0C400C90FBD /* media */ = {
+			isa = PBXGroup;
+			children = (
+				9C3459F419E3B0C400C90FBD /* materials */,
+				9C3459FC19E3B0C400C90FBD /* models */,
+				9C3459FE19E3B0C400C90FBD /* packs */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
+		9C3459F419E3B0C400C90FBD /* materials */ = {
+			isa = PBXGroup;
+			children = (
+				9C3459F519E3B0C400C90FBD /* scripts */,
+				9C3459F819E3B0C400C90FBD /* textures */,
+			);
+			path = materials;
+			sourceTree = "<group>";
+		};
+		9C3459F519E3B0C400C90FBD /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9C3459F619E3B0C400C90FBD /* Examples.material */,
+				9C3459F719E3B0C400C90FBD /* Ogre.material */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		9C3459F819E3B0C400C90FBD /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				9C3459F919E3B0C400C90FBD /* GreenSkin.jpg */,
+				9C3459FA19E3B0C400C90FBD /* spheremap.png */,
+				9C3459FB19E3B0C400C90FBD /* tusk.jpg */,
+			);
+			path = textures;
+			sourceTree = "<group>";
+		};
+		9C3459FC19E3B0C400C90FBD /* models */ = {
+			isa = PBXGroup;
+			children = (
+				9C3459FD19E3B0C400C90FBD /* ogrehead.mesh */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		9C3459FE19E3B0C400C90FBD /* packs */ = {
+			isa = PBXGroup;
+			children = (
+				9C3459FF19E3B0C400C90FBD /* cubemap.zip */,
+				9C345A0019E3B0C400C90FBD /* cubemapsJS.zip */,
+				9C345A0119E3B0C400C90FBD /* SdkTrays.zip */,
+				9C345A0219E3B0C400C90FBD /* skybox.zip */,
+			);
+			path = packs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C3459D319E3B0C400C90FBD /* Ogre */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C345A0B19E3B0C400C90FBD /* Build configuration list for PBXNativeTarget "Ogre" */;
+			buildPhases = (
+				9C3459CF19E3B0C400C90FBD /* Sources */,
+				9C3459D019E3B0C400C90FBD /* Frameworks */,
+				9C3459D119E3B0C400C90FBD /* Resources */,
+				9C3459D219E3B0C400C90FBD /* ShellScript */,
+				9C345A0E19E3B10400C90FBD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ogre;
+			productName = Ogre;
+			productReference = 9C3459D419E3B0C400C90FBD /* Ogre.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C3459CB19E3B0C400C90FBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				TargetAttributes = {
+					9C3459D319E3B0C400C90FBD = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 9C3459CE19E3B0C400C90FBD /* Build configuration list for PBXProject "Ogre" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9C3459CA19E3B0C400C90FBD;
+			productRefGroup = 9C3459D519E3B0C400C90FBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C3459D319E3B0C400C90FBD /* Ogre */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C3459D119E3B0C400C90FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C3459E719E3B0C400C90FBD /* InfoPlist.strings in Resources */,
+				9C345A0419E3B0C400C90FBD /* ogre.cfg in Resources */,
+				9C345A0819E3B0C400C90FBD /* resources.cfg in Resources */,
+				9C345A0619E3B0C400C90FBD /* plugins.cfg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C3459D219E3B0C400C90FBD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# This shell script simply copies resources into their respective locations\nmkdir -p \"$BUILT_PRODUCTS_DIR/Ogre.app/Contents/Frameworks\"\nmkdir -p \"$BUILT_PRODUCTS_DIR/Ogre.app/Contents/Plugins\"\nditto \"$OGRE_SDK_ROOT/lib/macosx/Release/Ogre.framework\" \"$BUILT_PRODUCTS_DIR/Ogre.app/Contents/Frameworks/Ogre.framework\"\nditto \"$OGRE_SDK_ROOT/lib/macosx/Release/OgreOverlay.framework\" \"$BUILT_PRODUCTS_DIR/Test.app/Contents/Frameworks/OgreOverlay.framework\"\nditto \"$OGRE_SDK_ROOT/lib/macosx/Release/RenderSystem_GL.framework\" \"$BUILT_PRODUCTS_DIR/Ogre.app/Contents/Frameworks/RenderSystem_GL.framework\"\nditto \"$PROJECT_DIR/$PROJECT_NAME/media/\" \"$BUILT_PRODUCTS_DIR/Ogre.app/Contents/Resources/media/\"\nditto $PROJECT_DIR/$PROJECT_NAME/*.cfg \"$BUILT_PRODUCTS_DIR/Ogre.app/Contents/Resources/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C3459CF19E3B0C400C90FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C3459F019E3B0C400C90FBD /* OgreFramework.cpp in Sources */,
+				9C3459E919E3B0C400C90FBD /* main.mm in Sources */,
+				9C3459ED19E3B0C400C90FBD /* OgreDemoApp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9C3459E519E3B0C400C90FBD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C3459E619E3B0C400C90FBD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C345A0919E3B0C400C90FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/lib/macosx/Release\"",
+					"\"$(OGRE_SDK_ROOT)/Dependencies\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ogre/Ogre-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/include/OGRE\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/OSX\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/Overlay\"",
+					"\"$(OGRE_SDK_ROOT)/include/OIS\"",
+					"\"$(OGRE_SDK_ROOT)/Dependencies/include\"",
+					"\"$(OGRE_SDK_ROOT)/boost\"",
+				);
+				INFOPLIST_FILE = "Ogre/Ogre-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/lib\"",
+					"\"$(OGRE_SDK_ROOT)/Dependencies/lib/Release\"",
+					/opt/local/lib,
+				);
+				OGRE_SDK_ROOT = "/SDKs/OgreSDK-1.9.0";
+				OTHER_LDFLAGS = (
+					"-lOIS",
+					"-lboost_system-mt",
+					"-framework",
+					Ogre,
+					"-framework",
+					OgreOverlay,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9C345A0A19E3B0C400C90FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/lib/macosx/Release\"",
+					"\"$(OGRE_SDK_ROOT)/Dependencies\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ogre/Ogre-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/include/OGRE\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/OSX\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/Overlay\"",
+					"\"$(OGRE_SDK_ROOT)/include/OIS\"",
+					"\"$(OGRE_SDK_ROOT)/Dependencies/include\"",
+					"\"$(OGRE_SDK_ROOT)/boost\"",
+				);
+				INFOPLIST_FILE = "Ogre/Ogre-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/lib\"",
+					"\"$(OGRE_SDK_ROOT)/Dependencies/lib/Release\"",
+					/opt/local/lib,
+				);
+				OGRE_SDK_ROOT = "/SDKs/OgreSDK-1.9.0";
+				OTHER_LDFLAGS = (
+					"-lOIS",
+					"-lboost_system-mt",
+					"-framework",
+					Ogre,
+					"-framework",
+					OgreOverlay,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9C345A0C19E3B0C400C90FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/OSX\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/Overlay\"",
+					"\"$(OGRE_SDK_ROOT)/include/OIS\"",
+					"\"$(OGRE_SDK_ROOT)/Dependencies/include\"",
+					"\"$(OGRE_SDK_ROOT)/boost\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE\"",
+					"\"$(OGRE_SDK_ROOT)/include\"",
+				);
+			};
+			name = Debug;
+		};
+		9C345A0D19E3B0C400C90FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/OSX\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE/Overlay\"",
+					"\"$(OGRE_SDK_ROOT)/include/OIS\"",
+					"\"$(OGRE_SDK_ROOT)/Dependencies/include\"",
+					"\"$(OGRE_SDK_ROOT)/boost\"",
+					"\"$(OGRE_SDK_ROOT)/include/OGRE\"",
+					"\"$(OGRE_SDK_ROOT)/include\"",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C3459CE19E3B0C400C90FBD /* Build configuration list for PBXProject "Ogre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C345A0919E3B0C400C90FBD /* Debug */,
+				9C345A0A19E3B0C400C90FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C345A0B19E3B0C400C90FBD /* Build configuration list for PBXNativeTarget "Ogre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C345A0C19E3B0C400C90FBD /* Debug */,
+				9C345A0D19E3B0C400C90FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C3459CB19E3B0C400C90FBD /* Project object */;
+}
