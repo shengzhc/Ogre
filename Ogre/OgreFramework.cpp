@@ -10,7 +10,7 @@ namespace Ogre
 
 OgreFramework::OgreFramework()
 {
-	m_MoveSpeed			= 0.1f;
+	m_MoveSpeed			= 10.0f;
 	m_RotateSpeed       = 0.3f;
     
 	m_bShutDownOgre     = false;
@@ -76,12 +76,12 @@ bool OgreFramework::initOgre(Ogre::String wndTitle, OIS::KeyListener *pKeyListen
     m_pSceneMgr->addRenderQueueListener(m_pOverlaySystem);
 
 	m_pCamera = m_pSceneMgr->createCamera("Camera");
-	m_pCamera->setPosition(Vector3(0, 400, 1000));
+	m_pCamera->setPosition(Vector3(0, 150, 500));
 	m_pCamera->lookAt(Vector3(0, 0, 0));
-	m_pCamera->setNearClipDistance(.1f);
+	m_pCamera->setNearClipDistance(5.0f);
     
 	m_pViewport = m_pRenderWnd->addViewport(m_pCamera);
-	m_pViewport->setBackgroundColour(ColourValue(0, 0, 0, 1.0f));
+	m_pViewport->setBackgroundColour(ColourValue(0, 0, 0));
     
     m_pCamera->setAspectRatio(Real(m_pViewport->getActualWidth()) / Real(m_pViewport->getActualHeight()));
 	m_pViewport->setCamera(m_pCamera);
