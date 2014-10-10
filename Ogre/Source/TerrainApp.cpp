@@ -32,13 +32,17 @@ void TerrainApp::createScene()
         OgreFramework::getSingletonPtr()->m_pCamera->setFarClipDistance(0);
     }
     
-    OgreFramework::getSingletonPtr()->m_pSceneMgr->setSkyBox(true, "Examples/SpaceSkyBox");
+    Ogre::ColourValue fadeColour(0.1, 0.1, 0.1);
+    OgreFramework::getSingletonPtr()->m_pSceneMgr->setFog(Ogre::FOG_LINEAR, fadeColour, 0.0, 300, 600);
+    OgreFramework::getSingletonPtr()->m_pRenderWnd->getViewport(0)->setBackgroundColour(fadeColour);
+    
+//    OgreFramework::getSingletonPtr()->m_pSceneMgr->setSkyBox(true, "Examples/SpaceSkyBox");
 //    OgreFramework::getSingletonPtr()->m_pSceneMgr->setSkyDome(true, "Examples/CloudySky", 5, 8);
     
-//    Ogre::Plane plane;
-//    plane.d = 1000;
-//    plane.normal = Ogre::Vector3::NEGATIVE_UNIT_Y;
-//    OgreFramework::getSingletonPtr()->m_pSceneMgr->setSkyPlane(true, plane, "Examples/SpaceSkyPlane", 1500, 75);
+    Ogre::Plane plane;
+    plane.d = 100;
+    plane.normal = Ogre::Vector3::NEGATIVE_UNIT_Y;
+    OgreFramework::getSingletonPtr()->m_pSceneMgr->setSkyPlane(true, plane, "Examples/CloudySky", 500, 20, true, 0.5, 150, 150);
     
     Ogre::Vector3 lightdir(0.55, -.3f, .75f);
     lightdir.normalise();
@@ -75,6 +79,7 @@ void TerrainApp::createScene()
     }
     
     m_pTerrainGroup->freeTemporaryResources();
+    
 }
 
 void TerrainApp::defineTerrain(long x, long y)
