@@ -78,7 +78,7 @@ protected:
 };
 #endif
 
-class DemoApp : public OIS::KeyListener
+class DemoApp : public OIS::KeyListener, public Ogre::FrameListener
 {
 public:
 	DemoApp();

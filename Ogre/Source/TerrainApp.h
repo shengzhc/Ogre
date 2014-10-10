@@ -14,11 +14,12 @@
 #include <Terrain/OgreTerrainGroup.h>
 #include <Terrain/OgreTerrain.h>
 
-class TerrainApp : public DemoApp, public Ogre::FrameListener
+class TerrainApp : public DemoApp
 {
 private:
     Ogre::TerrainGlobalOptions *m_pTerrainGlobals;
     Ogre::TerrainGroup *m_pTerrainGroup;
+    OgreBites::Label *m_pInfoLabel;
     bool m_pTerrainsImported;
     
     void defineTerrain(long x, long y);

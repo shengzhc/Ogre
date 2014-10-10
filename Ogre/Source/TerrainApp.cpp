@@ -32,6 +32,14 @@ void TerrainApp::createScene()
         OgreFramework::getSingletonPtr()->m_pCamera->setFarClipDistance(0);
     }
     
+    OgreFramework::getSingletonPtr()->m_pSceneMgr->setSkyBox(true, "Examples/SpaceSkyBox");
+//    OgreFramework::getSingletonPtr()->m_pSceneMgr->setSkyDome(true, "Examples/CloudySky", 5, 8);
+    
+//    Ogre::Plane plane;
+//    plane.d = 1000;
+//    plane.normal = Ogre::Vector3::NEGATIVE_UNIT_Y;
+//    OgreFramework::getSingletonPtr()->m_pSceneMgr->setSkyPlane(true, plane, "Examples/SpaceSkyPlane", 1500, 75);
+    
     Ogre::Vector3 lightdir(0.55, -.3f, .75f);
     lightdir.normalise();
     
@@ -48,12 +56,14 @@ void TerrainApp::createScene()
     m_pTerrainGroup->setOrigin(Ogre::Vector3::ZERO);
     configureTerrainDefaults(light);
     
+    m_pInfoLabel = OgreFramework::getSingletonPtr()->m_pTrayMgr->createLabel(OgreBites::TL_TOP, "TInfo", "", 350);
+    
     for (long x=0; x<=0; x++) {
         for (long y=0; y<=0; y++) {
             defineTerrain(x, y);
         }
     }
-    
+    OgreFramework::getSingletonPtr()->m_pRoot->addFrameListener(this);
     m_pTerrainGroup->loadAllTerrains(true);
 
     if (m_pTerrainsImported) {
@@ -144,8 +154,22 @@ bool TerrainApp::frameRenderingQueued(const Ogre::FrameEvent& evt)
 {
     bool ret = Ogre::FrameListener::frameRenderingQueued(evt);
     if (m_pTerrainGroup->isDerivedDataUpdateInProgress()) {
-        
+        OgreFramework::getSingletonPtr()->m_pTrayMgr->moveWidgetToTray(m_pInfoLabel, OgreBites::TL_TOP, 0);
+        m_pInfoLabel->show();
+        if (m_pTerrainsImported) {
+            m_pInfoLabel->setCaption("Building terrain, please wait...");
+        } else {
+            m_pInfoLabel->setCaption("Updating textures, patience...");
+        }
+    } else {
+        OgreFramework::getSingletonPtr()->m_pTrayMgr->removeWidgetFromTray(m_pInfoLabel);
+        m_pInfoLabel->hide();
+        if (m_pTerrainsImported) {
+            m_pTerrainGroup->saveAllTerrains(true);
+            m_pTerrainsImported = false;
+        }
     }
+    return ret;
 }
 
 
