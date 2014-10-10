@@ -2,6 +2,7 @@
 
 #include "OgreDemoApp.h"
 #include "AppDelegate.h"
+#include "TerrainApp.h"
 
 //|||||||||||||||||||||||||||||||||||||||||||||||
 
@@ -35,7 +36,7 @@ int main(int argc, char **argv)
     
 	try
     {
-		DemoApp demo;
+		TerrainApp demo;
 		demo.startDemo();
     }
 	catch(std::exception& e)

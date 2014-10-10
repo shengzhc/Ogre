@@ -113,7 +113,7 @@ void DemoApp::destroyRTShaderSystem()
 void DemoApp::startDemo()
 {
 	new OgreFramework();
-	if(!OgreFramework::getSingletonPtr()->initOgre("DemoApp v1.0", this, 0))
+	if(!OgreFramework::getSingletonPtr()->initOgre("Ogre V1.0", this, 0))
 		return;
     
 	m_bShutdown = false;
@@ -205,8 +205,8 @@ void DemoApp::setupDemoScene()
         Ogre::Light *pointLight = m_pSceneMgr->createLight("pointLight");
         pointLight->setType(Ogre::Light::LT_POINT);
         pointLight->setPosition(Ogre::Vector3(0, 150, 250));
-        pointLight->setDiffuseColour(1.0, 1.0, 1.0);
-        pointLight->setSpecularColour(1.0, 1.0, 1.0);
+        pointLight->setDiffuseColour(.5, .5, .5);
+        pointLight->setSpecularColour(.5, .5, .5);
         
         Ogre::Light *directionalLight = m_pSceneMgr->createLight("directionalLight");
         directionalLight->setType(Ogre::Light::LT_DIRECTIONAL);

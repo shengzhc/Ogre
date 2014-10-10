@@ -57,9 +57,7 @@ bool OgreFramework::initOgre(Ogre::String wndTitle, OIS::KeyListener *pKeyListen
     pluginsPath = m_ResourcePath + "plugins.cfg";
 #endif
     
-//    m_pRoot = new Ogre::Root(pluginsPath, Ogre::macBundlePath() + "/ogre.cfg");
-    m_pRoot = new Ogre::Root(pluginsPath, m_ResourcePath + "ogre.cfg");
-    
+    m_pRoot = new Ogre::Root(pluginsPath, Ogre::macBundlePath() + "/ogre.cfg");    
 #ifdef OGRE_STATIC_LIB
     m_StaticPluginLoader.load();
 #endif
@@ -69,8 +67,7 @@ bool OgreFramework::initOgre(Ogre::String wndTitle, OIS::KeyListener *pKeyListen
 	m_pRenderWnd = m_pRoot->initialise(true, wndTitle);
     
 	m_pSceneMgr = m_pRoot->createSceneManager(ST_GENERIC, "SceneManager");
-	m_pSceneMgr->setAmbientLight(Ogre::ColourValue(0, 0, 0));
-    m_pSceneMgr->setShadowTechnique(Ogre::SHADOWTYPE_STENCIL_ADDITIVE);
+	m_pSceneMgr->setAmbientLight(Ogre::ColourValue(1, 1, 1));
 
     m_pOverlaySystem = new Ogre::OverlaySystem();
     m_pSceneMgr->addRenderQueueListener(m_pOverlaySystem);

@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C01D46E19E5035900356363 /* TerrainApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C01D46C19E5035900356363 /* TerrainApp.cpp */; };
+		9C01D47619E5E2AD00356363 /* dirt_grayrocky_diffusespecular.dds in Resources */ = {isa = PBXBuildFile; fileRef = 9C01D46F19E5E2AD00356363 /* dirt_grayrocky_diffusespecular.dds */; };
+		9C01D47719E5E2AD00356363 /* dirt_grayrocky_normalheight.dds in Resources */ = {isa = PBXBuildFile; fileRef = 9C01D47019E5E2AD00356363 /* dirt_grayrocky_normalheight.dds */; };
+		9C01D47819E5E2AD00356363 /* grass_green-01_diffusespecular.dds in Resources */ = {isa = PBXBuildFile; fileRef = 9C01D47119E5E2AD00356363 /* grass_green-01_diffusespecular.dds */; };
+		9C01D47919E5E2AD00356363 /* grass_green-01_normalheight.dds in Resources */ = {isa = PBXBuildFile; fileRef = 9C01D47219E5E2AD00356363 /* grass_green-01_normalheight.dds */; };
+		9C01D47A19E5E2AD00356363 /* growth_weirdfungus-03_diffusespecular.dds in Resources */ = {isa = PBXBuildFile; fileRef = 9C01D47319E5E2AD00356363 /* growth_weirdfungus-03_diffusespecular.dds */; };
+		9C01D47B19E5E2AD00356363 /* growth_weirdfungus-03_normalheight.dds in Resources */ = {isa = PBXBuildFile; fileRef = 9C01D47419E5E2AD00356363 /* growth_weirdfungus-03_normalheight.dds */; };
+		9C01D47C19E5E2AD00356363 /* terrain.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C01D47519E5E2AD00356363 /* terrain.png */; };
+		9C01D47E19E5F02D00356363 /* Ogre.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7019E47860000A6533 /* Ogre.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C01D47F19E5F02D00356363 /* OgreOverlay.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7119E47860000A6533 /* OgreOverlay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C01D48019E5F02D00356363 /* OgrePaging.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7219E47860000A6533 /* OgrePaging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C01D48119E5F02D00356363 /* OgreProperty.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7319E47860000A6533 /* OgreProperty.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C01D48219E5F02D00356363 /* OgreRTShaderSystem.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7419E47860000A6533 /* OgreRTShaderSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C01D48319E5F02D00356363 /* OgreTerrain.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7519E47860000A6533 /* OgreTerrain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C01D48419E5F02D00356363 /* OgreVolume.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7619E47860000A6533 /* OgreVolume.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C01D48519E5F02D00356363 /* Plugin_BSPSceneManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7719E47860000A6533 /* Plugin_BSPSceneManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C01D48619E5F02D00356363 /* Plugin_CgProgramManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7819E47860000A6533 /* Plugin_CgProgramManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C01D48719E5F02D00356363 /* Plugin_OctreeSceneManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7919E47860000A6533 /* Plugin_OctreeSceneManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C01D48819E5F02E00356363 /* Plugin_OctreeZone.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7A19E47860000A6533 /* Plugin_OctreeZone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C01D48919E5F02E00356363 /* Plugin_ParticleFX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7B19E47860000A6533 /* Plugin_ParticleFX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C01D48A19E5F02E00356363 /* Plugin_PCZSceneManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7C19E47860000A6533 /* Plugin_PCZSceneManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C01D48B19E5F02E00356363 /* RenderSystem_GL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7D19E47860000A6533 /* RenderSystem_GL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C3459D819E3B0C400C90FBD /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3459D719E3B0C400C90FBD /* Carbon.framework */; };
 		9C3459DA19E3B0C400C90FBD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3459D919E3B0C400C90FBD /* Cocoa.framework */; };
 		9C3459DC19E3B0C400C90FBD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3459DB19E3B0C400C90FBD /* IOKit.framework */; };
@@ -33,20 +55,20 @@
 		9CB2AD8919E47860000A6533 /* Plugin_ParticleFX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD7B19E47860000A6533 /* Plugin_ParticleFX.framework */; };
 		9CB2AD8A19E47860000A6533 /* Plugin_PCZSceneManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD7C19E47860000A6533 /* Plugin_PCZSceneManager.framework */; };
 		9CB2AD8B19E47860000A6533 /* RenderSystem_GL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB2AD7D19E47860000A6533 /* RenderSystem_GL.framework */; };
-		9CB2AD8C19E4787D000A6533 /* Ogre.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7019E47860000A6533 /* Ogre.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CB2AD8D19E4787D000A6533 /* OgreOverlay.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7119E47860000A6533 /* OgreOverlay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CB2AD8E19E4787D000A6533 /* OgrePaging.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7219E47860000A6533 /* OgrePaging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CB2AD8F19E4787D000A6533 /* OgreProperty.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7319E47860000A6533 /* OgreProperty.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CB2AD9019E4787D000A6533 /* OgreRTShaderSystem.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7419E47860000A6533 /* OgreRTShaderSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CB2AD9119E4787E000A6533 /* OgreTerrain.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7519E47860000A6533 /* OgreTerrain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CB2AD9219E4787E000A6533 /* OgreVolume.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7619E47860000A6533 /* OgreVolume.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CB2AD9319E4787E000A6533 /* Plugin_BSPSceneManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7719E47860000A6533 /* Plugin_BSPSceneManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CB2AD9419E4787E000A6533 /* Plugin_CgProgramManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7819E47860000A6533 /* Plugin_CgProgramManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CB2AD9519E4787E000A6533 /* Plugin_OctreeSceneManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7919E47860000A6533 /* Plugin_OctreeSceneManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CB2AD9619E4787E000A6533 /* Plugin_OctreeZone.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7A19E47860000A6533 /* Plugin_OctreeZone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CB2AD9719E4787E000A6533 /* Plugin_ParticleFX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7B19E47860000A6533 /* Plugin_ParticleFX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CB2AD9819E4787E000A6533 /* Plugin_PCZSceneManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7C19E47860000A6533 /* Plugin_PCZSceneManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CB2AD9919E4787E000A6533 /* RenderSystem_GL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CB2AD7D19E47860000A6533 /* RenderSystem_GL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD8C19E4787D000A6533 /* Ogre.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9CB2AD7019E47860000A6533 /* Ogre.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD8D19E4787D000A6533 /* OgreOverlay.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9CB2AD7119E47860000A6533 /* OgreOverlay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD8E19E4787D000A6533 /* OgrePaging.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9CB2AD7219E47860000A6533 /* OgrePaging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD8F19E4787D000A6533 /* OgreProperty.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9CB2AD7319E47860000A6533 /* OgreProperty.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD9019E4787D000A6533 /* OgreRTShaderSystem.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9CB2AD7419E47860000A6533 /* OgreRTShaderSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD9119E4787E000A6533 /* OgreTerrain.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9CB2AD7519E47860000A6533 /* OgreTerrain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD9219E4787E000A6533 /* OgreVolume.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9CB2AD7619E47860000A6533 /* OgreVolume.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD9319E4787E000A6533 /* Plugin_BSPSceneManager.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9CB2AD7719E47860000A6533 /* Plugin_BSPSceneManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD9419E4787E000A6533 /* Plugin_CgProgramManager.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9CB2AD7819E47860000A6533 /* Plugin_CgProgramManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD9519E4787E000A6533 /* Plugin_OctreeSceneManager.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9CB2AD7919E47860000A6533 /* Plugin_OctreeSceneManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD9619E4787E000A6533 /* Plugin_OctreeZone.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9CB2AD7A19E47860000A6533 /* Plugin_OctreeZone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD9719E4787E000A6533 /* Plugin_ParticleFX.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9CB2AD7B19E47860000A6533 /* Plugin_ParticleFX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD9819E4787E000A6533 /* Plugin_PCZSceneManager.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9CB2AD7C19E47860000A6533 /* Plugin_PCZSceneManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB2AD9919E4787E000A6533 /* RenderSystem_GL.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 9CB2AD7D19E47860000A6533 /* RenderSystem_GL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CB2B55719E4A353000A6533 /* Examples.material in Resources */ = {isa = PBXBuildFile; fileRef = 9CB2B54A19E4A353000A6533 /* Examples.material */; };
 		9CB2B55819E4A353000A6533 /* Ogre.material in Resources */ = {isa = PBXBuildFile; fileRef = 9CB2B54B19E4A353000A6533 /* Ogre.material */; };
 		9CB2B55919E4A353000A6533 /* GreenSkin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CB2B54D19E4A353000A6533 /* GreenSkin.jpg */; };
@@ -63,32 +85,65 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9C345A0E19E3B10400C90FBD /* CopyFiles */ = {
+		9C01D47D19E5F02000356363 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9C01D47E19E5F02D00356363 /* Ogre.framework in CopyFiles */,
+				9C01D47F19E5F02D00356363 /* OgreOverlay.framework in CopyFiles */,
+				9C01D48019E5F02D00356363 /* OgrePaging.framework in CopyFiles */,
+				9C01D48119E5F02D00356363 /* OgreProperty.framework in CopyFiles */,
+				9C01D48219E5F02D00356363 /* OgreRTShaderSystem.framework in CopyFiles */,
+				9C01D48319E5F02D00356363 /* OgreTerrain.framework in CopyFiles */,
+				9C01D48419E5F02D00356363 /* OgreVolume.framework in CopyFiles */,
+				9C01D48519E5F02D00356363 /* Plugin_BSPSceneManager.framework in CopyFiles */,
+				9C01D48619E5F02D00356363 /* Plugin_CgProgramManager.framework in CopyFiles */,
+				9C01D48719E5F02D00356363 /* Plugin_OctreeSceneManager.framework in CopyFiles */,
+				9C01D48819E5F02E00356363 /* Plugin_OctreeZone.framework in CopyFiles */,
+				9C01D48919E5F02E00356363 /* Plugin_ParticleFX.framework in CopyFiles */,
+				9C01D48A19E5F02E00356363 /* Plugin_PCZSceneManager.framework in CopyFiles */,
+				9C01D48B19E5F02E00356363 /* RenderSystem_GL.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C345A0E19E3B10400C90FBD /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9CB2AD8C19E4787D000A6533 /* Ogre.framework in CopyFiles */,
-				9CB2AD8D19E4787D000A6533 /* OgreOverlay.framework in CopyFiles */,
-				9CB2AD8E19E4787D000A6533 /* OgrePaging.framework in CopyFiles */,
-				9CB2AD8F19E4787D000A6533 /* OgreProperty.framework in CopyFiles */,
-				9CB2AD9019E4787D000A6533 /* OgreRTShaderSystem.framework in CopyFiles */,
-				9CB2AD9119E4787E000A6533 /* OgreTerrain.framework in CopyFiles */,
-				9CB2AD9219E4787E000A6533 /* OgreVolume.framework in CopyFiles */,
-				9CB2AD9319E4787E000A6533 /* Plugin_BSPSceneManager.framework in CopyFiles */,
-				9CB2AD9419E4787E000A6533 /* Plugin_CgProgramManager.framework in CopyFiles */,
-				9CB2AD9519E4787E000A6533 /* Plugin_OctreeSceneManager.framework in CopyFiles */,
-				9CB2AD9619E4787E000A6533 /* Plugin_OctreeZone.framework in CopyFiles */,
-				9CB2AD9719E4787E000A6533 /* Plugin_ParticleFX.framework in CopyFiles */,
-				9CB2AD9819E4787E000A6533 /* Plugin_PCZSceneManager.framework in CopyFiles */,
-				9CB2AD9919E4787E000A6533 /* RenderSystem_GL.framework in CopyFiles */,
+				9CB2AD8C19E4787D000A6533 /* Ogre.framework in Copy Files */,
+				9CB2AD8D19E4787D000A6533 /* OgreOverlay.framework in Copy Files */,
+				9CB2AD8E19E4787D000A6533 /* OgrePaging.framework in Copy Files */,
+				9CB2AD8F19E4787D000A6533 /* OgreProperty.framework in Copy Files */,
+				9CB2AD9019E4787D000A6533 /* OgreRTShaderSystem.framework in Copy Files */,
+				9CB2AD9119E4787E000A6533 /* OgreTerrain.framework in Copy Files */,
+				9CB2AD9219E4787E000A6533 /* OgreVolume.framework in Copy Files */,
+				9CB2AD9319E4787E000A6533 /* Plugin_BSPSceneManager.framework in Copy Files */,
+				9CB2AD9419E4787E000A6533 /* Plugin_CgProgramManager.framework in Copy Files */,
+				9CB2AD9519E4787E000A6533 /* Plugin_OctreeSceneManager.framework in Copy Files */,
+				9CB2AD9619E4787E000A6533 /* Plugin_OctreeZone.framework in Copy Files */,
+				9CB2AD9719E4787E000A6533 /* Plugin_ParticleFX.framework in Copy Files */,
+				9CB2AD9819E4787E000A6533 /* Plugin_PCZSceneManager.framework in Copy Files */,
+				9CB2AD9919E4787E000A6533 /* RenderSystem_GL.framework in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C01D46C19E5035900356363 /* TerrainApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TerrainApp.cpp; sourceTree = "<group>"; };
+		9C01D46D19E5035900356363 /* TerrainApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerrainApp.h; sourceTree = "<group>"; };
+		9C01D46F19E5E2AD00356363 /* dirt_grayrocky_diffusespecular.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = dirt_grayrocky_diffusespecular.dds; sourceTree = "<group>"; };
+		9C01D47019E5E2AD00356363 /* dirt_grayrocky_normalheight.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = dirt_grayrocky_normalheight.dds; sourceTree = "<group>"; };
+		9C01D47119E5E2AD00356363 /* grass_green-01_diffusespecular.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = "grass_green-01_diffusespecular.dds"; sourceTree = "<group>"; };
+		9C01D47219E5E2AD00356363 /* grass_green-01_normalheight.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = "grass_green-01_normalheight.dds"; sourceTree = "<group>"; };
+		9C01D47319E5E2AD00356363 /* growth_weirdfungus-03_diffusespecular.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = "growth_weirdfungus-03_diffusespecular.dds"; sourceTree = "<group>"; };
+		9C01D47419E5E2AD00356363 /* growth_weirdfungus-03_normalheight.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = "growth_weirdfungus-03_normalheight.dds"; sourceTree = "<group>"; };
+		9C01D47519E5E2AD00356363 /* terrain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = terrain.png; sourceTree = "<group>"; };
 		9C3459D419E3B0C400C90FBD /* Ogre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ogre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3459D719E3B0C400C90FBD /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		9C3459D919E3B0C400C90FBD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -166,6 +221,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C01D46B19E5035100356363 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9C01D46C19E5035900356363 /* TerrainApp.cpp */,
+				9C01D46D19E5035900356363 /* TerrainApp.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		9C3459CA19E3B0C400C90FBD = {
 			isa = PBXGroup;
 			children = (
@@ -212,8 +276,7 @@
 		9C3459E119E3B0C400C90FBD /* Ogre */ = {
 			isa = PBXGroup;
 			children = (
-				9C3459E519E3B0C400C90FBD /* InfoPlist.strings */,
-				9C3459E819E3B0C400C90FBD /* main.mm */,
+				9C01D46B19E5035100356363 /* Source */,
 				9C3459EA19E3B0C400C90FBD /* Basic Ogre Framework */,
 				9C3459F219E3B0C400C90FBD /* Resources */,
 				9C3459E219E3B0C400C90FBD /* Supporting Files */,
@@ -224,6 +287,8 @@
 		9C3459E219E3B0C400C90FBD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9C3459E519E3B0C400C90FBD /* InfoPlist.strings */,
+				9C3459E819E3B0C400C90FBD /* main.mm */,
 				9C3459E319E3B0C400C90FBD /* Ogre-Prefix.pch */,
 				9C3459E419E3B0C400C90FBD /* Ogre-Info.plist */,
 			);
@@ -284,6 +349,13 @@
 		9CB2B54C19E4A353000A6533 /* textures */ = {
 			isa = PBXGroup;
 			children = (
+				9C01D46F19E5E2AD00356363 /* dirt_grayrocky_diffusespecular.dds */,
+				9C01D47019E5E2AD00356363 /* dirt_grayrocky_normalheight.dds */,
+				9C01D47119E5E2AD00356363 /* grass_green-01_diffusespecular.dds */,
+				9C01D47219E5E2AD00356363 /* grass_green-01_normalheight.dds */,
+				9C01D47319E5E2AD00356363 /* growth_weirdfungus-03_diffusespecular.dds */,
+				9C01D47419E5E2AD00356363 /* growth_weirdfungus-03_normalheight.dds */,
+				9C01D47519E5E2AD00356363 /* terrain.png */,
 				9CB2B56519E4A915000A6533 /* nskingr.jpg */,
 				9CB2B56319E4A395000A6533 /* rockwall.tga */,
 				9CB2B54D19E4A353000A6533 /* GreenSkin.jpg */,
@@ -324,7 +396,8 @@
 				9C3459D019E3B0C400C90FBD /* Frameworks */,
 				9C3459D119E3B0C400C90FBD /* Resources */,
 				9C3459D219E3B0C400C90FBD /* ShellScript */,
-				9C345A0E19E3B10400C90FBD /* CopyFiles */,
+				9C345A0E19E3B10400C90FBD /* Copy Files */,
+				9C01D47D19E5F02000356363 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -370,13 +443,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C01D47919E5E2AD00356363 /* grass_green-01_normalheight.dds in Resources */,
+				9C01D47719E5E2AD00356363 /* dirt_grayrocky_normalheight.dds in Resources */,
+				9C01D47619E5E2AD00356363 /* dirt_grayrocky_diffusespecular.dds in Resources */,
 				9C3459E719E3B0C400C90FBD /* InfoPlist.strings in Resources */,
 				9CB2B55919E4A353000A6533 /* GreenSkin.jpg in Resources */,
 				9C345A0419E3B0C400C90FBD /* ogre.cfg in Resources */,
 				9CB2B56019E4A353000A6533 /* skybox.zip in Resources */,
+				9C01D47A19E5E2AD00356363 /* growth_weirdfungus-03_diffusespecular.dds in Resources */,
 				9C345A0819E3B0C400C90FBD /* resources.cfg in Resources */,
 				9CB2B56419E4A395000A6533 /* rockwall.tga in Resources */,
 				9CB2B56219E4A35F000A6533 /* ninja.mesh in Resources */,
+				9C01D47C19E5E2AD00356363 /* terrain.png in Resources */,
 				9CB2B55E19E4A353000A6533 /* cubemapsJS.zip in Resources */,
 				9CB2B55B19E4A353000A6533 /* tusk.jpg in Resources */,
 				9CB2B55819E4A353000A6533 /* Ogre.material in Resources */,
@@ -385,6 +463,8 @@
 				9CB2B55D19E4A353000A6533 /* cubemap.zip in Resources */,
 				9CB2B55C19E4A353000A6533 /* ogrehead.mesh in Resources */,
 				9CB2B55719E4A353000A6533 /* Examples.material in Resources */,
+				9C01D47819E5E2AD00356363 /* grass_green-01_diffusespecular.dds in Resources */,
+				9C01D47B19E5E2AD00356363 /* growth_weirdfungus-03_normalheight.dds in Resources */,
 				9CB2B56619E4A915000A6533 /* nskingr.jpg in Resources */,
 				9C345A0619E3B0C400C90FBD /* plugins.cfg in Resources */,
 			);
@@ -414,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C3459F019E3B0C400C90FBD /* OgreFramework.cpp in Sources */,
+				9C01D46E19E5035900356363 /* TerrainApp.cpp in Sources */,
 				9C3459E919E3B0C400C90FBD /* main.mm in Sources */,
 				9C3459ED19E3B0C400C90FBD /* OgreDemoApp.cpp in Sources */,
 			);
